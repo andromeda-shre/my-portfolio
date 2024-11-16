@@ -1,0 +1,81 @@
+/* Styles for dark mode */
+.dark-mode {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+}
+
+.dark-mode header {
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    background-color: rgba(0, 0, 0, 0.479);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode nav a {
+    color: var(--clr-light);
+}
+
+nav a:hover,
+.dark-mode nav a.active {
+    color: var(--clr-header);
+    border-bottom: 3px solid var(--clr-header);
+}
+
+.dark-mode .hamburger-menu i {
+    color: var(--clr-light);
+}
+
+.dark-mode .btn {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+}
+
+.dark-mode .btn:hover {
+    background-color: var(--clr-header);
+    color: var(--clr-light);
+}
+
+.dark-mode .social-icons a {
+    color: var(--clr-light);
+}
+
+.dark-mode .project-card {
+    background-color: hsl(0, 0%, 11%);
+}
+
+.dark-mode .btn-link {
+    color: var(--clr-light);
+}
+
+.dark-mode .btn-link:hover {
+    color: var(--clr-header);
+}
+
+.dark-mode input, .dark-mode textarea {
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 11%);
+    border: 1px solid hsl(0, 0%, 11%);
+    border-radius: 5px;
+}
+
+.dark-mode button[type="submit"] {
+    padding: 1rem 2.8rem;
+    background-color: var(--clr-header);
+    color: var(--clr-light);
+    border: none;
+    border-radius: 5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.dark-mode button[type="submit"]:hover {
+    background-color: var(--clr-dark);
+    color: var(--clr-header);
+}
+
+.dark-mode .service-card {
+    background-color: hsl(0, 0%, 11%);
+}
