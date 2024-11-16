@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/dark-mode.css">
+    <title>Andromeda Person | Home</title>
+</head>
+<body class="dark-mode">
+    <header id="navbar">
+        <a href="#home" class="logo">Andromeda</a>
+        <nav id="nav-links">
+            <div class="close-btn" id="close-btn">&times;</div>
+            <a href="#home" class="active">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+            <a href="files/Andromeda Person Resume.pdf" onclick="downloadFile()" class="btn">Résumé</a>
+            <div class="toggle-container" id="themeToggle">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </div>
+        </nav>
+        <div class="hamburger-menu" id="hamburger-menu">
+            <i class="fa fa-bars"></i>
+        </div>
+    </header>
+    <section class="hero" id="home">
+        <div class="hero-img">
+            <img src="images/selfie.png" alt="A photo of my face with a white background">
+        </div>
+        <div class="hero-content">
+            <h1>Hi, I'm <span>Andromeda</span> 👋</h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>I'm passionate about working with nonprofits, building real-world solutions, and using code to create a better tomorrow. This is my passion. This is my life.</p>
+            <div class="skills-icons">
+                <div class="icon-container">
+                    <a href="#"><i class="fa-brands fa-html5" style="color: #ff7816;"></i></a>
+                </div>
+                <div class="icon-container">
+                    <a href="#"><i class="fa-brands fa-css3-alt" style="color: #2196f3;"></i></a>
+                </div>
+                <div class="icon-container">
+                    <a href="#"><i class="fa-brands fa-square-js" style="color: #ffdf00;"></i></a>
+                </div>
+                <div class="icon-container">
+                    <a href="#"><i class="fa-brands fa-react" style="color: #00d7fc;"></i></a>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/andromeda-person-177516267/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/andromeda-shre" target="_blank"><i class="fa-brands fa-github"></i></a> 
+            </div>
+            <a href="#contact" class="btn">Get in touch</a>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <h1>My Projects</h1>
+        <div class="project-container">
+            <div class="project-card">
+                <img src="images/my-portfolio.PNG" alt="My Portfolio">
+                <h2>My Portfolio Website</h2>
+                <p>Short description of the project. This can include tech used and the problem solved.</p>
+                <a href="pages/projects/my-portfolio.html" class="btn">View Project</a>
+            </div>
+            <!-- <div class="project-card">
+                <img src="images/my-portfolio.PNG" alt="My Portfolio">
+                <h2>My Portfolio</h2>
+                <p>Short description of the project. This can include tech used and the problem solved.</p>
+                <a href="https://github.com/andromeda-shre/project1" class="btn">View Project</a>
+            </div>
+            <div class="project-card">
+                <img src="images/my-portfolio.PNG" alt="My Portfolio">
+                <h2>My Portfolio</h2>
+                <p>Short description of the project. This can include tech used and the problem solved.</p>
+                <a href="https://github.com/andromeda-shre/project1" class="btn">View Project</a>
+            </div>
+            <div class="project-card">
+                <img src="images/my-portfolio.PNG" alt="My Portfolio">
+                <h2>My Portfolio</h2>
+                <p>Short description of the project. This can include tech used and the problem solved.</p>
+                <a href="https://github.com/andromeda-shre/project1" class="btn">View Project</a>
+            </div> -->
+            <!-- Repeat for other projects -->
+        </div>
+        <div class="view-more">
+            <a href="pages/projects.html" class="btn-link">View All</a>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <h1>Services</h1>
+        <div class="service-cards">
+            <div class="service-card">
+                <div class="icon-container">
+                    <i class="fa fa-code" aria-hidden="true"></i>
+                </div>
+                <h2>Web Development</h2>
+                <p>I create responsive, high-performance websites using the latest technologies.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon-container">
+                    <i class="fa fa-paint-brush" aria-hidden="true"></i>
+                </div>
+                <h2>UI/UX Design</h2>
+                <p>I design user-friendly and aesthetically pleasing interfaces for web and mobile applications.</p>
+            </div>
+            <!-- Add more services as needed -->
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h1>Get in Touch</h1>
+        <div class="contact-text">
+            <p>Whether you're interested in my services, interested in connecting, or if you want to say hi, you can fill out this form below to contact me!</p>
+        </div>
+        <form action="mailto:androperson05@proton.me" method="POST" enctype="multipart/form-data">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Andromeda Person</p>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
