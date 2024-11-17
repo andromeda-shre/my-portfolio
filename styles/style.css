@@ -333,20 +333,14 @@ section.hero .hero-img img:hover {
 }
 
 @keyframes words {
-    0%, 20% {
-        content: "Web Developer";
-    }
     21%, 40% {
         content: "Developer";
     }
     41%, 60% {
         content: "Web Designer";
     }
-    61%, 80% {
-        content: "Life-long Learner";
-    }
-    81%, 100% {
-        content: "Tech Enthusiast";
+    61%, 100% {
+        content: "Continous Learner";
     }
 }
 
