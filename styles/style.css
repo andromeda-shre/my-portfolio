@@ -399,7 +399,6 @@ section.hero .hero-img img:hover {
     gap: 4rem;
 }
 
-/* Styles for Projects section */
 .projects {
     text-align: center;
     padding: 5rem 9%;
@@ -414,41 +413,6 @@ section.hero .hero-img img:hover {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 3rem;
-}
-
-.project-card {
-    background-color: var(--clr-light);
-    padding: 2rem;
-    border-radius: 10px;
-    background-color: hsl(0, 2%, 92%);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.project-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.project-card h2 {
-    font-size: 2rem;
-    margin-top: 1rem;
-}
-
-.project-card p {
-    font-size: 1.6rem;
-    margin-top: 1rem;
-    color: hsl(0, 0%, 60%);
-}
-
-.project-card .btn {
-    margin-top: 1rem;
 }
 
 .view-more {
