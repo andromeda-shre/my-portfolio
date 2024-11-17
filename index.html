@@ -10,14 +10,14 @@
 </head>
 <body class="dark-mode">
     <header id="navbar">
-        <a href="#home" class="logo">Andromeda</a>
+        <a href="index.html" class="logo">Andromeda</a>
         <nav id="nav-links">
             <div class="close-btn" id="close-btn">&times;</div>
-            <a href="#home" class="active">Home</a>
-            <a href="#projects">Projects</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
-            <a href="files/Andromeda Person Resume.pdf" onclick="downloadFile()" class="btn">Résumé</a>
+            <a href="#home" class="active" id="_home" onclick="changeActiveTab(event)">Home</a>
+            <a href="pages/projects.html">Projects</a>
+            <a href="#services" id="_services" onclick="changeActiveTab(event)">Services</a>
+            <a href="#contact" id="_contact" onclick="changeActiveTab(event)">Contact</a>
+            <a href="files/Andromeda Person Resume.pdf" onclick="downloadFile(event)" class="btn">Résumé</a>
             <div class="toggle-container" id="themeToggle">
                 <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <circle cx="12" cy="12" r="5"></circle>
@@ -77,7 +77,6 @@
                 <p>Short description of the project. This can include tech used and the problem solved.</p>
                 <a href="https://github.com/andromeda-shre/my-portfolio" target="_blank" class="btn">View Project</a>
             </div>
-            <!-- Repeat for other projects -->
         </div>
         <div class="view-more">
             <a href="pages/projects.html" class="btn-link">View All</a>

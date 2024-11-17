@@ -62,3 +62,42 @@ closeBtn.addEventListener("click", () => {
     navLinks.classList.remove("active");
 });
 
+// Changes the active class to whichever tab is clicked
+function changeActiveTab(event) {
+    // Get all the navigation links
+    let home = document.getElementById("_home");
+    let services = document.getElementById("_services");
+    let contact = document.getElementById("_contact");
+
+    // Remove active class from all links first
+    home.classList.remove("active");
+    services.classList.remove("active");
+    contact.classList.remove("active");
+
+    // Add active class to the clicked tab
+    event.target.classList.add("active");
+}
+
+// Function to handle scroll event and update the active class
+function updateActiveTabOnScroll() {
+    let sections = document.querySelectorAll("section");
+    let navLinks = document.querySelectorAll("#nav-links a");
+    
+    // Check each section's position relative to the viewport
+    sections.forEach((section, index) => {
+        let rect = section.getBoundingClientRect();
+        let navLink = navLinks[index];
+        
+        // If the section is in the viewport, add the active class
+        if (rect.top <= 0 && rect.bottom >= 0) {
+            navLinks.forEach(link => link.classList.remove("active")); // Remove active from all links
+            navLink.classList.add("active"); // Add active to the current section's link
+        }
+    });
+}
+
+// Add scroll event listener
+window.addEventListener("scroll", updateActiveTabOnScroll);
+
+// Initial call to set the active class on page load (in case user lands in the middle of the page)
+updateActiveTabOnScroll();

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/dark-mode.css">
+    <title>Andromeda Person | Home</title>
+</head>
+<body class="dark-mode">
+    <header id="navbar">
+        <a href="../index.html" class="logo">Andromeda</a>
+        <nav id="nav-links">
+            <div class="close-btn" id="close-btn">&times;</div>
+            <a href="../index.html">Home</a>
+            <a href="projects.html" class="active">Projects</a>
+            <a href="../index.html#services">Services</a>
+            <a href="../index.html#contact">Contact</a>
+            <a href="../files/Andromeda Person Resume.pdf" onclick="downloadFile()" class="btn">Résumé</a>
+            <div class="toggle-container" id="themeToggle">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </div>
+        </nav>
+        <div class="hamburger-menu" id="hamburger-menu">
+            <i class="fa fa-bars"></i>
+        </div>
+    </header>
+    <section class="projects" id="projects">
+        <h1>My Projects</h1>
+        <div class="project-container">
+            <div class="project-card">
+                <img src="../images/my-portfolio.PNG" alt="My Portfolio">
+                <h2>My Portfolio Website</h2>
+                <p>Short description of the project. This can include tech used and the problem solved.</p>
+                <a href="https://github.com/andromeda-shre/my-portfolio" target="_blank" class="btn">View Project</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Andromeda Person</p>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="../index.html#services">Services</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
