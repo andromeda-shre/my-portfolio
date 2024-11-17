@@ -12,7 +12,7 @@
     <header id="navbar">
         <a href="index.html" class="logo">Andromeda</a>
         <nav id="nav-links">
-            <div class="close-btn" id="close-btn">&times;</div>
+            <div class="close-btn" id="close-btn" onclick="showHamburgerMenu(event)">&times;</div>
             <a href="#home" class="active" id="_home" onclick="changeActiveTab(event)">Home</a>
             <a href="pages/projects.html">Projects</a>
             <a href="#services" id="_services" onclick="changeActiveTab(event)">Services</a>
@@ -35,8 +35,8 @@
                 </svg>
             </div>
         </nav>
-        <div class="hamburger-menu" id="hamburger-menu">
-            <i class="fa fa-bars"></i>
+        <div class="hamburger-menu menu-remove" id="hamburger-menu">
+            <i class="fa fa-bars" onclick="hideHamburgerMenu(event)"></i>
         </div>
     </header>
     <section class="hero" id="home">

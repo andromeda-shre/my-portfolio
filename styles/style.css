@@ -164,27 +164,30 @@ nav a.active {
 
 .hamburger-menu i:hover {
     color: var(--clr-header);
+
 }
 
+/* Styles for the section tag */
 section {
     min-height: 70vh;
     padding: 5rem 9% 5rem;
 }
 
-section.hero {
+/* Styles for the hero class */
+.hero {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 8rem;
 }
 
-section.hero .hero-content h1 {
+.hero .hero-content h1 {
     font-size: 6rem;
     font-weight: 700;
     line-height: 1.3;
 }
 
-section.hero .hero-content p {
+.hero .hero-content p {
     font-size: 1.8rem;
 }
 
@@ -214,37 +217,6 @@ section.hero .hero-img img {
 section.hero .hero-img img:hover {
     font-size: 1.8rem;
     font-weight: 500;
-}
-
-/* Side navigation positioning */
-.side-nav {
-    position: fixed;                             /* Fix it to the left */
-    top: 17rem;                                  /* Account for sticky header height */
-    left: 15rem;                                 /* Align it at the left edge */
-    width: 200px;                                /* Set a fixed width */
-    height: 100vh;                               /* Full height of the viewport */
-    padding-top: 2rem;                           /* Padding from the top */
-}
-
-.side-nav ul {
-    padding: 0;
-    margin: 0;
-}
-
-.side-nav ul li {
-    list-style-type: none;
-}
-
-.side-nav ul a {
-    display: block;
-    color: #fff;
-    text-decoration: none;
-    padding: 1rem;
-    font-size: 1.8rem;
-}
-
-.side-nav ul a:hover {
-    background-color: #555; /* Optional hover effect */
 }
 
 /* Container section for content */
@@ -602,27 +574,9 @@ footer p {
     }
 }
 
-@media (max-width:995px) {
-    .home {
-        flex-direction: column;
-        margin: 5rem 4rem;
-    }
-
-    .home .home-content h3 {
-        font-size: 2.5rem;
-    }
-
-    .home-content h1 {
-        font-size: 5rem;
-    }
-
-    .home-img img {
-        width: 70vw;
-        margin-top: 4rem;
-    }
-}
-
 @media (max-width: 768px) {
+
+    /* Styles the nav links menu for mobile */
     #nav-links {
         display: none;
         position: absolute;
@@ -632,8 +586,6 @@ footer p {
         height: 100vh;
         background-color: rgba(0, 0, 0, 0.911);
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         gap: 3rem;
     }
 
@@ -653,8 +605,9 @@ footer p {
         color: var(--clr-light);
     }
     
+    /* Styles the hamburger menu for mobile */
     .hamburger-menu {
-        display: block; /* Show the hamburger icon */
+        display: block;
         cursor: pointer;
     }
 
@@ -662,17 +615,17 @@ footer p {
         color: var(--clr-header);
     }
 
+    /* Styles the close button in the nav-links mobile menu */
     .close-btn {
-        display: block; /* Show close button when navbar is open */
+        display: block;
         transition: 0.3s ease;
     }
 
     .close-btn:hover {
-        display: block;
         color: var(--clr-header);
     }
 
-    /* Hero Section for Mobile */
+    /* Hero section for mobile */
     .hero {
         flex-direction: column;
         text-align: center;
@@ -698,7 +651,7 @@ footer p {
         font-size: 1.8rem !important;
     }
 
-    /* Skills Icons on Mobile */
+    /* Skills icons on mobile */
     .skills-icons {
         justify-content: center;
         align-items: center;
@@ -711,7 +664,7 @@ footer p {
         font-size: 6rem;
     }
 
-    /* Projects Section for Mobile */
+    /* Projects section for mobile */
     .projects .project-container {
         grid-template-columns: 1fr;
     }
@@ -724,7 +677,7 @@ footer p {
         font-size: 3rem;
     }
 
-    /* Services Section for Mobile */
+    /* Services section for mobile */
     .service-cards {
         flex-direction: column;
         justify-content: center;
@@ -734,7 +687,7 @@ footer p {
     .service-card {
         width: 80%;
         max-width: 400px;
-        margin-left: auto;  /* Center align the cards */
+        margin-left: auto;
         margin-right: auto;
     }
 
@@ -750,7 +703,7 @@ footer p {
         font-size: 2rem;
     }
     
-    /* Contact Section for Mobile */
+    /* Contact section for mobile */
     .contact {
         padding: 3rem 5%;
     }
@@ -782,7 +735,7 @@ footer p {
         padding: 1rem 2rem;
     }
 
-     /* Footer Links on Mobile */
+     /* Footer links on mobile */
      footer .footer-content {
         padding: 2rem 3rem;
     }

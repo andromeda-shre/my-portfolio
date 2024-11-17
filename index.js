@@ -78,6 +78,20 @@ function changeActiveTab(event) {
     event.target.classList.add("active");
 }
 
+// Hides hamburger menu when clicked
+function hideHamburgerMenu (event) {
+    let menu = document.getElementById("hamburger-menu");
+
+    menu.style.display = "none"; // Hide the menu
+}
+
+// Shows hamburger menu when nav-links is closed
+function showHamburgerMenu (event) {
+    let menu = document.getElementById("hamburger-menu");
+    
+    menu.style.display = "block"; // Show the menu
+}
+
 // Function to handle scroll event and update the active class
 function updateActiveTabOnScroll() {
     let sections = document.querySelectorAll("section");
