@@ -142,9 +142,7 @@ nav a.active {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    text-align: center;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 /* Show nav links when the menu is active */
@@ -623,9 +621,9 @@ footer p {
 }
 
 @media (max-width: 768px) {
-    /* Styles for the section tag for mobile */
+    
     section {
-        padding: 1rem;
+        padding: 0;
         margin: 0;
     }
 
@@ -640,6 +638,7 @@ footer p {
         box-sizing: border-box;
         background-color: rgba(0, 0, 0, 0.911);
         flex-direction: column;
+        gap: 3rem;
         transition: 0.3s ease;
     }
 
@@ -651,6 +650,7 @@ footer p {
 
     #nav-links .btn {
         background-color: var(--clr-header);
+        margin: 0;
         padding: 1rem 2.8rem;
     }
 
@@ -686,7 +686,6 @@ footer p {
     .hero {
         flex-direction: column;
         text-align: center;
-        margin-top: 2rem;
     }
 
     .hero-img img {
@@ -731,7 +730,7 @@ footer p {
     }
 
     .box {
-        width: 100%;
+        width: 90%;
         font-size: 1.6rem;
     }
 
