@@ -386,6 +386,7 @@ section.hero .hero-img img:hover {
 }
 
 .project-tags {
+    padding-bottom: 2rem;
     text-transform: uppercase;
     color: var(--clr-header);
 }
@@ -701,6 +702,11 @@ footer p {
     .buttons-container {
         flex-direction: column;
         gap: 1rem;
+    }
+
+    .buttons-container a {
+        width: 100%;
+        text-align: center;
     }
 
     .img-container img {
