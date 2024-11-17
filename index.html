@@ -9,6 +9,7 @@
     <title>Andromeda Person | Home</title>
 </head>
 <body class="dark-mode">
+    <!-- Header & Navbar -->
     <header id="navbar">
         <a href="index.html" class="logo">Andromeda</a>
         <nav id="nav-links">
@@ -39,6 +40,7 @@
             <i class="fa fa-bars" onclick="hideHamburgerMenu(event)"></i>
         </div>
     </header>
+    <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-img">
             <img src="images/selfie.png" alt="A photo of my face with a white background">
@@ -68,20 +70,44 @@
             <a href="#contact" class="btn">Get in touch</a>
         </div>
     </section>
+    <!-- Projects Section -->
     <section class="projects" id="projects">
-        <h1>My Projects</h1>
-        <div class="project-container">
-            <div class="project-card">
-                <img src="images/my-portfolio.PNG" alt="My Portfolio">
-                <h2>My Portfolio Website</h2>
-                <p>My personal portfolio website where I showcase my skills, projects, and passion for web development and design.</p>
-                <a href="https://github.com/andromeda-shre/my-portfolio" target="_blank" class="btn"><i class="fa-brands fa-github"></i> View Project</a>
+        <h1>Projects I've Worked On</h1>
+        <div class="container">
+            <div class="box">
+                <div class="img-container">
+                    <img src="images/my-portfolio.PNG" alt="My Portfolio">
+                </div>
+                <div class="container-content">
+                    <h3>My Portfolio Website</h3>
+                    <p>My personal portfolio website where I showcase my skills, projects, and passion for web development and design.</p>
+                    <p class="project-tags">HTML, CSS, Javascript</p>
+                    <div class="buttons-container">
+                        <a href="https://github.com/andromeda-shre/my-portfolio" target="_blank" class="btn"><i class="fa fa-code" aria-hidden="true"></i> Code</a>
+                        <a href="https://andromeda-shre.github.io/my-portfolio/" target="_blank" class="btn"><i class="fa-brands fa-github"></i> Live</a>
+                    </div>
+                </div>
             </div>
-        </div>
+            <div class="box">
+                <div class="img-container">
+                    <img src="images/my-portfolio.PNG" alt="My Portfolio">
+                </div>
+                <div class="container-content">
+                    <h3>My Portfolio Website</h3>
+                    <p>My personal portfolio website where I showcase my skills, projects, and passion for web development and design.</p>
+                    <p class="project-tags">HTML, CSS, Javascript</p>
+                    <div class="buttons-container">
+                        <a href="https://github.com/andromeda-shre/my-portfolio" target="_blank" class="btn"><i class="fa fa-code" aria-hidden="true"></i> Code</a>
+                        <a href="https://andromeda-shre.github.io/my-portfolio/" target="_blank" class="btn"><i class="fa-brands fa-github"></i> Live</a>
+                    </div>
+                </div>
+            </div>
+          </div>
         <div class="view-more">
             <a href="pages/projects.html" class="btn-link">View All</a>
         </div>
     </section>
+    <!-- Services Section -->
     <section class="services" id="services">
         <h1>Services</h1>
         <div class="service-cards">
@@ -101,6 +127,7 @@
             </div>
         </div>
     </section>
+    <!-- Contact Section -->
     <section class="contact" id="contact">
         <h1>Get in Touch</h1>
         <div class="contact-text">
@@ -113,6 +140,7 @@
             <button type="submit" class="btn">Send Message</button>
         </form>
     </section>
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <p>&copy; 2024 Andromeda Person</p>

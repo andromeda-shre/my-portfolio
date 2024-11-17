@@ -7,7 +7,7 @@
 .dark-mode header {
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
-    background-color: rgba(0, 0, 0, 0.479);
+    background-color: rgba(22, 22, 22, 0.479);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -37,6 +37,12 @@ nav a:hover,
 
 .dark-mode .social-icons a {
     color: var(--clr-light);
+}
+
+.dark-mode .box {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    border: 1px solid #383838;
 }
 
 .dark-mode .project-card {

@@ -3,7 +3,7 @@
 
 /* Root selector for defining global CSS variables */
 :root {
-    --clr-dark: hsl(0, 0%, 0%);  /* Dark color for text in light mode, background in dark mode */
+    --clr-dark: hsl(0, 0%, 9%);  /* Dark color for text in light mode, background in dark mode */
     --clr-light: hsl(0, 0%, 100%); /* Light color for background in light mode, text in dark mode */
     --clr-header: hsl(273, 73%, 58%);
 }
@@ -21,13 +21,13 @@
 
 html {
     font-size: 62.5%; /* 1rem = 10px */
+    overflow-x: hidden;
 }
 
 /* General Body Styles */
 body {
     width: 100%;
     height: 100vh;
-    overflow-x: hidden;
     background-color: hsl(0, 0%, 100%);
     color: var(--clr-dark);
     overflow-x: hidden;
@@ -142,7 +142,9 @@ nav a.active {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
 }
 
 /* Show nav links when the menu is active */
@@ -217,16 +219,6 @@ section.hero .hero-img img {
 section.hero .hero-img img:hover {
     font-size: 1.8rem;
     font-weight: 500;
-}
-
-/* Container section for content */
-.container {
-    margin-left: 200px;    /* Push the content right of the side-nav */
-    padding: 2rem;         /* Padding inside the container */
-    width: 100%;           /* Container takes the remaining space */
-    border: solid 1px #3d444d;
-    border-radius: 10px;
-    margin-top: 0;         /* Align container at the top */
 }
 
 .social-icons a {
@@ -351,6 +343,62 @@ section.hero .hero-img img:hover {
     font-size: 4rem;
     margin-bottom: 1rem;
     font-weight: 700;
+}
+
+/* Styles for Projects section */
+.container {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+}
+  
+.box {
+    padding: 2rem;
+    color: var(--clr-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.8rem;
+    height: 100%;
+    width: 35%;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.img-container img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.container-content {
+    text-align: start;
+}
+
+.container-content p {
+    padding-top: 2rem;
+}
+
+.project-tags {
+    text-transform: uppercase;
+    color: var(--clr-header);
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    gap: 4rem;
 }
 
 /* Styles for Projects section */
@@ -575,6 +623,11 @@ footer p {
 }
 
 @media (max-width: 768px) {
+    /* Styles for the section tag for mobile */
+    section {
+        padding: 1rem;
+        margin: 0;
+    }
 
     /* Styles the nav links menu for mobile */
     #nav-links {
@@ -584,17 +637,21 @@ footer p {
         left: 0;
         width: 100%;
         height: 100vh;
+        box-sizing: border-box;
         background-color: rgba(0, 0, 0, 0.911);
         flex-direction: column;
-        gap: 3rem;
+        transition: 0.3s ease;
     }
 
     #nav-links a {
         color: var(--clr-light);
+        margin: 0;
+        padding: 0;
     }
 
     #nav-links .btn {
         background-color: var(--clr-header);
+        padding: 1rem 2.8rem;
     }
 
     #nav-links svg {
@@ -629,6 +686,7 @@ footer p {
     .hero {
         flex-direction: column;
         text-align: center;
+        margin-top: 2rem;
     }
 
     .hero-img img {
@@ -665,19 +723,37 @@ footer p {
     }
 
     /* Projects section for mobile */
-    .projects .project-container {
-        grid-template-columns: 1fr;
+    .container {
+        gap: 1.5rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box {
+        width: 100%;
+        font-size: 1.6rem;
+    }
+
+    .buttons-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .img-container img {
+        border-radius: 3px;
     }
 
     .projects h1 {
         font-size: 3rem;
     }
+    
 
+    /* Services section for mobile */
     .services h1 {
         font-size: 3rem;
     }
-
-    /* Services section for mobile */
+    
     .service-cards {
         flex-direction: column;
         justify-content: center;
